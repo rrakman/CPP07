@@ -23,16 +23,17 @@ int main()
     size_t arr3_size = sizeof(arr3) / sizeof(arr3[0]);
 
     std::cout << "Int array: " << std::endl;
-    iter(arr, arr_size, rot1);
-    iter(arr, arr_size, print);
+    iter(arr, arr_size, rot1<int>);
+    iter(arr, arr_size, print<int>);
 
     std::cout << "Char array: " << std::endl;
-    iter(arr2, arr2_size, rot1);
-    iter(arr2, arr2_size, print);
+    iter(arr2, arr2_size, rot1<char>);
+    iter(arr2, arr2_size, print<const char>);
 
     std::cout << "Double array: " << std::endl;
-    iter(arr2, arr2_size, rot1);
-    iter(arr3, arr3_size, print);
+    iter(arr3, arr2_size, rot1<double>);
+    iter(arr3, arr3_size, print<double>);
 
     return 0;
 }
+

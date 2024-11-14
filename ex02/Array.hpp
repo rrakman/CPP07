@@ -81,4 +81,4 @@ template <typename T>
 unsigned int Array<T>::size() const
 {
     return a_size;
-} 
+}

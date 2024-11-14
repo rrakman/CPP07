@@ -1,7 +1,8 @@
 #include "Array.hpp"
 
 int main()
-{    
+{   Array<int> khawi;
+
     Array<int> arr1(20);
     for (unsigned int i = 0; i < arr1.size(); ++i)
         arr1[i] = i + 13;
